@@ -1,6 +1,6 @@
 name: "my hello action"
 
-description: "say hello with actions"
+description: "say hello with GitHub Actions"
 
 inputs:
   firstGreeting:
@@ -16,3 +16,7 @@ inputs:
   thirdGreeting:
     description: "a third greeting"
     required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
